@@ -15,6 +15,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
+
+<script>
+window.onload = function() {
+
+var obj = getJsonFromUrl(window.location.href)["job_listing"];
+for(var key in obj) { // Array.forEach would skip string keys here
+  console.log(key,":",obj[key]);
+}
+
+document.getElementById("nf-field-9").value = window.location.href;
+}
+</script>
+
 <?php if ( $apply = get_the_job_application_method() ) :
 	wp_enqueue_script( 'wp-job-manager-job-application' );
 	?>

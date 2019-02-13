@@ -11,12 +11,13 @@
  * @version     1.31.1
  */
 
+ /*
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
 <?php if ( is_user_logged_in() ) : ?>
-
+<!--
 	<fieldset class="fieldset-logged_in">
 		<label><?php esc_html_e( 'Your account', 'wp-job-manager' ); ?></label>
 		<div class="field account-sign-in">
@@ -28,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<a class="button" href="<?php echo esc_url( apply_filters( 'submit_job_form_logout_url', wp_logout_url( get_permalink() ) ) ); ?>"><?php esc_html_e( 'Sign out', 'wp-job-manager' ); ?></a>
 		</div>
 	</fieldset>
-
+-->
 <?php else :
 	$account_required            = job_manager_user_requires_account();
 	$registration_enabled        = job_manager_enable_registration();
@@ -71,3 +72,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	}
 	?>
 <?php endif; ?>
+*/

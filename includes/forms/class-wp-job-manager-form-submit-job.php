@@ -174,25 +174,25 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 			array(
 				'job'     => array(
 					'job_title'       => array(
-						'label'       => __( 'Job Title', 'wp-job-manager' ),
+						'label'       => __( 'Title', 'wp-job-manager' ),
 						'type'        => 'text',
 						'required'    => true,
 						'placeholder' => '',
 						'priority'    => 1,
 					),
 					'job_location'    => array(
-						'label'       => __( 'Location', 'wp-job-manager' ),
+						'label'       => __( 'Institute', 'wp-job-manager' ),
 						'description' => __( 'Leave this blank if the location is not important', 'wp-job-manager' ),
 						'type'        => 'text',
 						'required'    => false,
-						'placeholder' => __( 'e.g. "London"', 'wp-job-manager' ),
+						'placeholder' => __( 'e.g. "School of Medicine"', 'wp-job-manager' ),
 						'priority'    => 2,
 					),
 					'job_type'        => array(
-						'label'       => __( 'Job type', 'wp-job-manager' ),
+						'label'       => __( 'Type', 'wp-job-manager' ),
 						'type'        => $job_type,
 						'required'    => true,
-						'placeholder' => __( 'Choose job type&hellip;', 'wp-job-manager' ),
+						'placeholder' => __( 'Choose year of students year&hellip;', 'wp-job-manager' ),
 						'priority'    => 3,
 						'default'     => 'full-time',
 						'taxonomy'    => 'job_listing_type',
