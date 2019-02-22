@@ -225,7 +225,7 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 					'company_name'    => array(
 						'label'       => __( 'Company name', 'wp-job-manager' ),
 						'type'        => 'text',
-						'required'    => true,
+						'required'    => false,
 						'placeholder' => __( 'Enter the name of the company', 'wp-job-manager' ),
 						'priority'    => 1,
 					),

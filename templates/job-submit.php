@@ -51,18 +51,18 @@ global $job_manager;
 
 		<!-- Company Information Fields -->
 		<?php if ( $company_fields ) : ?>
-			<h2><?php esc_html_e( 'Oppertunity Details', 'wp-job-manager' ); ?></h2>
+			<h2><?php // esc_html_e( 'Oppertunity Details', 'wp-job-manager' ); ?></h2>
 
 			<?php do_action( 'submit_job_form_company_fields_start' ); ?>
-
-			<?php foreach ( $company_fields as $key => $field ) : ?>
+			
+			<?php // foreach ( $company_fields as $key => $field ) : ?>
 				<fieldset class="fieldset-<?php echo esc_attr( $key ); ?>">
 					<label for="<?php echo esc_attr( $key ); ?>"><?php echo wp_kses_post( $field['label'] ) . wp_kses_post( apply_filters( 'submit_job_form_required_label', $field['required'] ? '' : ' <small>' . __( '(optional)', 'wp-job-manager' ) . '</small>', $field ) ); ?></label>
 					<div class="field <?php echo $field['required'] ? 'required-field' : ''; ?>">
 						<?php get_job_manager_template( 'form-fields/' . $field['type'] . '-field.php', array( 'key' => $key, 'field' => $field ) ); ?>
 					</div>
 				</fieldset>
-			<?php endforeach; ?>
+			<?php // endforeach; ?>
 
 			<?php do_action( 'submit_job_form_company_fields_end' ); ?>
 		<?php endif; ?>
