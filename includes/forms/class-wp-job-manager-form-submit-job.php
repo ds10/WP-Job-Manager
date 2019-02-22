@@ -222,13 +222,15 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 					),
 				),
 				'company' => array(
+					/*
 					'company_name'    => array(
 						'label'       => __( 'Company name', 'wp-job-manager' ),
 						'type'        => 'text',
 						'required'    => false,
 						'placeholder' => __( 'Enter the name of the company', 'wp-job-manager' ),
 						'priority'    => 1,
-					),
+						
+					),*/
 					'company_website' => array(
 						'label'       => __( 'Website', 'wp-job-manager' ),
 						'type'        => 'text',
@@ -245,6 +247,7 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 						'maxlength'   => 64,
 						'priority'    => 3,
 					),
+					/*
 					'company_video'   => array(
 						'label'       => __( 'Video', 'wp-job-manager' ),
 						'type'        => 'text',
@@ -260,8 +263,8 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 						'placeholder' => __( '@yourcompany', 'wp-job-manager' ),
 						'priority'    => 5,
 					),
-					'company_logo'    => array(
-						'label'              => __( 'Logo', 'wp-job-manager' ),
+					*/				'company_logo'    => array(
+						'label'              => __( 'Image', 'wp-job-manager' ),
 						'type'               => 'file',
 						'required'           => false,
 						'placeholder'        => '',
